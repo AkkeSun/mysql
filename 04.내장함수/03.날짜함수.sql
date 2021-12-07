@@ -1,0 +1,12 @@
+SET @DATA = '2021-12-31' ;
+-- 날짜 추가
+SELECT ADDDATE(@DATA, INTERVAL 1 DAY)    AS add1,
+       ADDDATE(@DATA, INTERVAL 1 MONTH )    add2,
+       ADDDATE(@DATA, INTERVAL 1 YEAR)      add3
+;
+
+-- 날짜 감소
+SELECT SUBDATE(@DATA, INTERVAL 1 DAY)    AS add1,
+       SUBDATE(@DATA, INTERVAL 1 MONTH )    add2,
+       SUBDATE(@DATA, INTERVAL 1 YEAR)      add3
+;
